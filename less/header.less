@@ -1,0 +1,130 @@
+.header {
+	width: 100%;
+	padding-top: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	&__wrapper {
+		overflow: hidden;
+
+	}
+
+	&__left {
+		float: left;
+
+	}
+
+	&__right {
+		float: right;
+
+	}
+
+	&__phone,
+	&__address {
+			display: inline-block;
+			vertical-align: top;
+		font-size: 20px;
+		font-weight: 700;
+		&-block{
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 5px;
+		}
+
+		svg {
+			width: 30px;
+			height: 30px;
+		}
+	}
+	&__phone{
+		margin-right: 30px;
+		&-time{
+			font-weight: 400;
+		}
+	}
+	&__address{
+		&-icon{
+			width: 30px;
+			height: 30px;
+			background-image: inline('../images/base64/metro.svg');
+		}
+		&-city{
+			font-weight: 400;
+		}
+	}
+
+	&__personal {
+			display: inline-block;
+			vertical-align: top;
+		font-size: 18px;
+		font-weight: 700;
+		&-cart {
+			display: block;
+			color: @color;
+		}
+		&_menu{
+			display: block;
+		}
+	}
+
+	@media (max-width: 1107px) {
+		&__personal,
+		&__address{
+			display: none;
+
+		}
+		&__phone{
+			margin-top: 13px;
+			font-size: 18px;
+
+			&-time{
+				display: inline-block;
+				vertical-align: top;
+			color: @color;
+			}
+		}
+		&__personal {
+			&_menu{
+				display: block;
+				margin-left: 45px;
+			}
+		}
+
+		&__address{
+			&_menu{
+				background:@color;
+				display: block;
+				color:#fff;
+				padding: 20px 45px;
+
+			}
+		}
+	}
+	 @media (max-width: 585px) {
+		 &__phone{
+			 margin-top: 2px;
+			 margin-right: 0;
+			 &-time{
+				 display: block;
+
+			 }
+		 }
+	   }
+	 @media (max-width: 440px) {
+		 &__wrapper{
+		  text-align: center;
+		 }
+		 &__left,
+		 &__right{
+
+		  float: none;
+		 }
+		 &__address{
+			 &-icon{
+				 display:inline-block;
+				 vertical-align:top;
+			 }
+		 }
+	   }
+}

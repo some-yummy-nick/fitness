@@ -1,0 +1,60 @@
+.menu {
+	top: 36px;
+	position: absolute;
+	background: #fff;
+	z-index: 2;
+	display: none;
+	vertical-align:top;
+	left: 10px;
+
+	&.active {
+		width: 403px;
+		padding-top: 23px;
+		top: 13px;
+		.menu__block {
+			display: inline-block;
+
+		}
+
+	}
+
+	&__block {
+		display: none;
+		margin-top: -15px;
+		vertical-align: top;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		margin-top: 20px;
+		margin-bottom: 85px;
+		margin-left: 45px;
+		list-style-type: none;
+	}
+
+	&__item{
+		margin-bottom: 10px;
+	}
+
+	&__link {
+		font-size: 25px;
+		text-decoration: none;
+
+		&:hover {
+			color: @color;
+		}
+
+	}
+
+	@media (max-width: 1107px) {
+		display:inline-block;
+	}
+
+	 @media (max-width: 426px) {
+		 &.active{
+			 width: 100%;
+		 }
+
+	   }
+}

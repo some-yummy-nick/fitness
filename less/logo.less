@@ -1,0 +1,38 @@
+.logo {
+	position: relative;
+		display: inline-block;
+		vertical-align: top;
+	margin-right: 30px;
+	svg{
+		width: 185px;
+		height: 58px;
+	}
+
+	 &::after{
+	       content: "";
+	       position: absolute;
+	       display: block;
+		 right: -20px;
+		 top: 50%;
+		 transform: translateY(-50%);
+		 width: 1px;
+		 height: 40px;
+		 background-color: #030303;
+	     }
+
+	@media (max-width: 1107px) {
+		margin-left: 30px;
+		margin-right: 0;
+		svg{
+			width: 154px;
+			height: 49px;
+		}
+	}
+	@media (max-width: 568px) {
+		&:after{
+			display: none;
+		}
+	}
+
+}
+

@@ -1,0 +1,90 @@
+.tabs-menu {
+	line-height: 1;
+	background-color: #fff;
+	border-left: 1px solid #d1d1d1;
+	border-top: 1px solid #d1d1d1;
+	border-right: 1px solid #d1d1d1;
+	border-bottom: 2px solid #14bef0;
+	margin-top: -53px;
+	height: 53px;
+	position: relative;
+
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		.clearfix();
+	}
+
+	&__item {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 40px;
+	}
+
+	&__link {
+		position: relative;
+		display: block;
+		color: #666;
+		font-size: 20px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-decoration: none;
+		height: 50px;
+		line-height: 50px;
+
+		&:hover,
+		&.active {
+			color: #14bef0;
+
+			&:after {
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				margin-left: -6px;
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-bottom: 5px solid #14bef0;
+				content: '';
+			}
+
+		}
+
+	}
+
+}
+
+// <!-- begin tabs-menu -->
+// <div class="tabs-menu">
+
+// 	<ul class="tabs-menu__list">
+// 		<li class="tabs-menu__item">
+// 			<a class="tabs-menu__link js-tabs-menu__link"href="#js-tabs-1">
+// 				основные характеристики
+// 			</a>
+// 		</li>
+// 		<li class="tabs-menu__item">
+// 			<a class="tabs-menu__link js-tabs-menu__link"href="#js-tabs-2">
+// 				подробные характеристики
+// 			</a>
+// 		</li>
+// 		<li class="tabs-menu__item">
+// 			<a class="tabs-menu__link js-tabs-menu__link"href="#js-tabs-3">
+// 				Преимущества и особенности
+// 			</a>
+// 		</li>
+// 		<li class="tabs-menu__item">
+// 			<a class="tabs-menu__link js-tabs-menu__link"href="#js-tabs-4">
+// 				сочетание с другими приборами
+// 			</a>
+// 		</li>
+// 		<li class="tabs-menu__item">
+// 			<a class="tabs-menu__link js-tabs-menu__link"href="#js-tabs-5">
+// 				документация
+// 			</a>
+// 		</li>
+// 	</ul>
+
+// </div>
+// <!-- end tabs-menu -->
