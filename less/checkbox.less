@@ -1,0 +1,47 @@
+.checkbox {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+
+	input[type="checkbox"] {
+		display: none;
+
+		&:checked ~ .checkbox__custom:after {
+			background: inline('../images/base64/check.png');
+		}
+	}
+
+	&__custom {
+		position: relative;
+		display: block;
+		width: 20px;
+		min-width: 20px;
+		height: 20px;
+		margin-right: 10px;
+
+		border: 1px solid @color;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: -1px;
+			right: -7px;
+			left: 1px;
+			bottom: 0;
+
+			transition: all linear 0.3s;
+		}
+	}
+
+	&__block{
+
+	}
+
+	a {
+		color: #3d3dd9;
+	}
+
+	@media (max-width: 712px) {
+		margin-bottom: 20px;
+	}
+}
