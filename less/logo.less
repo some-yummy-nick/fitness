@@ -7,7 +7,10 @@
 		width: 185px;
 		height: 58px;
 	}
-
+a{
+	display:inline-block;
+	vertical-align:top;
+}
 	 &::after{
 	       content: "";
 	       position: absolute;
@@ -20,9 +23,9 @@
 		 background-color: #030303;
 	     }
 
-	@media (max-width: 1107px) {
-		margin-left: 30px;
-		margin-right: 0;
+	@media (max-width: 750px) {
+		margin-left: 40px;
+		margin-right: 40px;
 		svg{
 			width: 154px;
 			height: 49px;
@@ -33,6 +36,10 @@
 			display: none;
 		}
 	}
+
+	@media (max-width:443px) {
+		margin-bottom: 20px;
+			}
 
 }
 

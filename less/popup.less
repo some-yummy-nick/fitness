@@ -17,7 +17,7 @@
 	opacity: 0;
 	pointer-events: none;
 	background: rgba(24, 17, 34, 0.7);
-	.transition(opacity 500ms);
+	transition:opacity 500ms;
 
 	&_active {
 		opacity: 1;
@@ -57,8 +57,10 @@
 		position: absolute;
 		top: 16px;
 		right: 16px;
-		.size(17px, 18px);
-		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAASCAMAAACKJ8VmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAh1BMVEWtra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra2tra3///+HsN1UAAAALHRSTlMAHh0k5zbmTuUs5FvhI+Bp2xvaeNIUiMgOhwGWvRIDpO8CD3cVaBxaLU0lN8nKMeMAAAABYktHRCy63XGrAAAACXBIWXMAAAsSAAALEgHS3X78AAAAl0lEQVQY01WQ2RqCIBCFx0hNTEzEXCB3zfL93y9cG7g4h++fFQAswOcCQK42ArZDANybdwKPuov592AHAfO3S/iIVo94eCTHItGaiPjf8JlmkKU5GlFI9VKywGuUVV2VxmKNJo1BpEqUxCBPW2hx5070WnvRHWDg4+ojHzbgM7KHCHsv5tLpLJ/oB+DrzGjE7OhXmz9mwQ+AjQgUycNIrQAAAABJRU5ErkJggg==') no-repeat;
+		width: 21px;
+		height: 21px;
+
+		background-image: url(../images/popup-close.png);
 		cursor: pointer;
 		z-index: 2;
 	}

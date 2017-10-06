@@ -2,7 +2,7 @@
 	padding-top: 40px;
 	background-color: #3d3dd9;
 	color:#fff;
-	padding-bottom: 20px;
+	padding-bottom: 60px;
 
 	&__row{
 		display: flex;
@@ -63,20 +63,25 @@
 
 	&__footer{
 		display: none;
+		box-sizing: content-box;
 		position: absolute;
-		padding: 15px;
+		padding: 0;
+		padding-bottom: 15px;
+		padding-top: 15px;
 		border-radius:0 0 15px 15px;
 		border: 2px solid #fff;
 		left: -2px;
 		top: 90%;
-		width: 102%;
+		width: 100%;
 		background: #fff;
 		z-index: 2;
 	}
 
 	&__button{
 		display: block;
-		width: 165px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
 		height: 34px;
 		line-height: 34px;
 		text-align: center;
@@ -86,7 +91,7 @@
 		font-weight: 700;
 		color:#fff;
 	}
-	
+
 	@media (max-width: 1147px) {
 		&__row{
 			justify-content:center;
@@ -94,5 +99,10 @@
 		&__cell{
 			width: 100%/3;
 		}
+
 			}
+
+
+
+
 }
