@@ -1,0 +1,56 @@
+.mouse {
+	margin-left: 210px;
+display:inline-block;
+vertical-align:top;
+	color: #131823;
+	font-size: 15px;
+	font-weight: 400;
+
+	&:hover{
+		text-decoration: none;
+	}
+
+
+	&__icon{
+		border: 2px solid #000;
+		border-radius: 15px;
+		display: block;
+		height: 46px;
+		width: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		cursor: pointer;
+
+		span {
+			animation-duration: 1.2s;
+			animation-fill-mode: both;
+			animation-iteration-count: infinite;
+			animation-name: scroll;
+			background: none repeat scroll 0 0  @color;
+			border: 1px solid transparent;
+			border-radius: 2px;
+			display: block;
+			height: 12px;
+			margin: 6px auto;
+			width: 6px;
+		}
+	}
+
+
+
+	@media (max-width: 1083px) {
+		display: none;
+	}
+
+}
+@keyframes scroll {
+	0% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+}

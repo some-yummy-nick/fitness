@@ -1,0 +1,45 @@
+.logo {
+	position: relative;
+		display: inline-block;
+		vertical-align: top;
+	margin-right: 30px;
+	svg{
+		width: 185px;
+		height: 58px;
+	}
+a{
+	display:inline-block;
+	vertical-align:top;
+}
+	 &::after{
+	       content: "";
+	       position: absolute;
+	       display: block;
+		 right: -20px;
+		 top: 50%;
+		 transform: translateY(-50%);
+		 width: 1px;
+		 height: 40px;
+		 background-color: #030303;
+	     }
+
+	@media (max-width: 750px) {
+		margin-left: 40px;
+		margin-right: 40px;
+		svg{
+			width: 154px;
+			height: 49px;
+		}
+	}
+	@media (max-width: 568px) {
+		&:after{
+			display: none;
+		}
+	}
+
+	@media (max-width:443px) {
+		margin-bottom: 20px;
+			}
+
+}
+

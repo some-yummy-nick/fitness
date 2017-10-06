@@ -1,0 +1,113 @@
+.form {
+	max-width: 755px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	padding: 50px;
+	padding-top: 0;
+
+	&__popup{
+		padding-top: 20px;
+	}
+
+	&__title{
+		margin-bottom: 30px;
+		color: #000;
+		font-size: 40px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&__field,
+	&__message,
+	&__time,
+	&__select{
+		border: 1px solid #3d3dd9;
+		padding-left: 20px;
+		font-family: Geometria;
+		
+		&::-webkit-input-placeholder {color:#000;}
+		&::-moz-placeholder          {color:#000;}/* Firefox 19+ */
+		&:-moz-placeholder           {color:#000;}/* Firefox 18- */
+		&:-ms-input-placeholder      {color:#000;}
+	}
+
+	&__field,
+	&__time,
+	&__select{
+		height: 50px;
+	}
+
+	&__field,
+	&__message,
+	&__select{
+		margin-bottom: 20px;
+	}
+	
+	&__field{
+		min-width: 225px;
+		width: 46.5%;
+		margin-right: 6%;
+
+			&_second{
+				margin-right: 0;
+			}
+	}
+	
+	&__message,
+	&__select{
+		width: 100%;
+		display: block;
+	}
+
+	&__message{
+		padding: 20px;
+		resize: none;
+	}
+
+	&__time{
+		width: 100px;
+		margin-right: 20px;
+		&:last-child{
+			margin-right: 0;
+		}
+
+	}
+
+	&__record{
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		div{
+			margin-bottom: 20px;
+		}
+	}
+
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__submit{
+		width: 225px;
+		height: 50px;
+		line-height: 47px;
+		background-color: #3d3dd9;
+		border: 2px solid #3d3dd9;
+		border-radius: 25px;
+		color: white;
+		font-size: 18px;
+		font-weight: 700;
+		text-align: center;
+
+		&:hover{
+			background: #fff;
+			color:#3d3dd9;
+		}
+	}
+
+}

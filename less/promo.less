@@ -1,0 +1,87 @@
+.promo {
+	height: 862px;
+	margin-bottom: 50px;
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-image: url(../images/bg.png);
+
+	&__wrapper {
+		height: 862px;
+		padding-top: 35px;
+		background-position: right bottom;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url(../images/girl.png);
+	}
+
+	&__text {
+		max-width: 622px;
+		margin-top: 300px;
+		margin-bottom: 35px;
+		font-size: 50px;
+		font-weight: 700;
+
+		&-cross {
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				left: 0;
+				top: 57%;
+				transform: translateY(-50%);
+				height: 3px;
+				width: 100%;
+				background-color: red;
+			}
+		}
+
+		&-accent{
+			color: @color;
+		}
+	}
+
+	&__link{
+		display: block;
+		width: 325px;
+		height: 63px;
+		margin-bottom: 30px;
+		line-height: 55px;
+		text-align: center;
+		background-color: white;
+		border: 4px solid #3d3dd9;
+		border-radius: 32px;
+		font-size: 26px;
+		font-weight: 400;
+
+		&:hover{
+			text-decoration: none;
+			background: #3d3dd9;
+			color:#fff;
+		}
+	}
+
+	@media (max-width: 1107px) {
+		&__text{
+			margin-top: 360px;
+			max-width: 376px;
+			font-size: 30px;
+		}
+		&__link{
+			width: 248px;
+			height: 53px;
+			line-height: 43px;
+			border-radius: 27px;
+		}
+	}
+	@media (max-width: 568px) {
+
+		&__text{
+			margin-top: 200px;
+			margin-bottom: 100px;
+
+		}
+	}
+}

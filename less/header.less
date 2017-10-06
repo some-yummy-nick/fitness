@@ -1,0 +1,186 @@
+.header {
+	width: 100%;
+	padding-top: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	&__wrapper {
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+
+	}
+
+	&__left {
+		float: left;
+
+	}
+
+	&__right {
+		float: right;
+
+	}
+
+	&__phone,
+	&__address {
+		display: flex;
+		font-size: 20px;
+		font-weight: 700;
+		&-block {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 5px;
+		}
+
+		svg {
+			width: 30px;
+			height: 30px;
+		}
+	}
+	&__phone {
+		margin-right: 30px;
+		&-time {
+			font-weight: 400;
+		}
+	}
+	&__address {
+		&-icon {
+			width: 30px;
+			height: 30px;
+			background-image: inline('../images/base64/metro.svg');
+			background-repeat: no-repeat;
+		}
+		&-city {
+			font-weight: 400;
+		}
+
+		&_footer {
+			padding-bottom: 20px;
+			.header__address-icon {
+				margin-bottom: 20px;
+			}
+			border-bottom: 1px solid #fff;
+
+			margin-bottom: 30px;
+		}
+	}
+
+	&__personal {
+		margin-right: 68px;
+		font-size: 18px;
+		font-weight: 700;
+
+		&-cart {
+			display: block;
+			color: @color;
+		}
+		&_menu {
+			display: block;
+		}
+	}
+
+	@media (max-width: 750px) {
+		&__wrapper{
+
+		}
+		&__personal,
+		&__address {
+			display: none;
+
+		}
+
+		&__phone {
+			font-size: 18px;
+
+			&-time {
+				display: inline-block;
+				vertical-align: top;
+				color: @color;
+			}
+		}
+
+		&__personal {
+			&_menu {
+				display: block;
+				margin-left: 45px;
+			}
+		}
+
+		&__address {
+			&_menu {
+				background: @color;
+				display: block;
+				color: #fff;
+				padding: 20px 45px;
+
+			}
+		}
+	}
+
+	@media (max-width: 1048px) {
+
+		&__address {
+
+			&_footer {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+				padding-bottom: 20px;
+				padding-right: 50px;
+
+				border-bottom: none;
+
+				margin-bottom: 30px;
+
+				&::after {
+					content: "";
+					position: absolute;
+					display: block;
+					right: -5px;
+					top: 54px;
+					width: 1px;
+					height: 50px;
+					background: #fff;
+				}
+			}
+		}
+	}
+
+
+
+	@media (max-width: 585px) {
+		&__phone {
+			margin-right: 0;
+			&-time {
+				display: block;
+
+			}
+		}
+	}
+	@media (max-width: 443px) {
+		&__wrapper {
+			justify-content: center;
+			flex-wrap: wrap;
+			text-align: center;
+		}
+
+		&__left,
+		&__right {
+
+			float: none;
+		}
+
+		&__address {
+			&-icon {
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+		&__personal {
+			&_menu {
+				text-align: left;
+			}
+		}
+	}
+}
